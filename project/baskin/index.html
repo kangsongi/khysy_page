@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #logo {
+            background-image: url(img/qorud.png); 
+            background-repeat: repeat-x;
+            background-attachment: fixed;
+            background-position: right top;
+        }
+     
+        .bas >ul > li {
+            display: inline-block;  /*가로배치*/
+        }
+        .bas .baskin {
+            margin-left: 380px;  /*로고 가운데 배치 */
+        }
+        .bas .right {
+            margin-left: 250px;
+        }
+
+        .header {
+            width: 100%;
+            height:45px;
+            background-color: white;
+        }
+        ul {
+            list-style: none; /*목록정리 초기화*/
+        }
+
+    /* 리스트 항복 가로 배치 */
+    .nav > li {
+        width:12.5%;
+        float:left;
+        height: 45px;
+    }
+
+    /* 링크 사이즈 처리 및 텍스트 꾸밈 */
+    .nav > li > a {
+        text-decoration:none;
+        display: block;
+        width: auto;
+        height: 45px;
+        text-align: center;
+        color:black;
+        -webkit-transition: all 0.2s ease-in;
+        position: relative;
+        top: 0px;
+    }
+
+    /* 2차메뉴 */
+    .nav > li > ul {
+        background-color:white;
+        width: 100%;
+        /* 타이틀바 보다 작은값 */
+        z-index: 100;
+        /* 숨김처리 */
+        opacity: 100;
+        visibility: hidden;
+
+        position: relative;
+    }
+    .nav > li:hover > ul {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transition: all 0.5s;
+    }
+    /* 2차 메뉴 각항목 > 링크 */
+    .nav ul > li > a {
+        display: block;
+        text-align: center;
+        height: 30px;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 30px;
+        color: gray;
+        text-decoration: none;
+    }
+    .nav ul > li > a:hover {
+        color: gray;
+        background-color:white;
+    }
+    
+    /* 11월  이달의 신제품 */
+    #inst-text-img {
+        width: 500px;
+        margin-left: 240px;
+    }
+    .green { 
+        width:100%;
+        height:250px;
+        background-color: #acd393;
+        text-align: center;
+    }
+    .green-img-1 {
+        margin-top: 30px;
+    }
+
+    /* 인스타 그리드 부분 */
+    #inst {
+        margin-left: 280px;
+        margin-top: 30px;
+    }
+    #inst div {  /*모든 박스 크기 일괄 지정*/
+        /* height: 150px; 
+        width: 20%;
+        float: left;
+        display: block;
+        width: auto;
+        padding:10px; */
+        display: block;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+        float: left;
+    }
+    #in {
+        margin-left: 280px;
+    }
+    #in div {  /*모든 박스 크기 일괄 지정*/
+        display: block;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+        float: left;
+}
+#i {
+    text-align: center;
+}
+
+    /* footer  */
+    hr { 
+        background-color:orange;
+    }
+    .footer-ul {
+        margin-left: 90px;
+    }
+    .footer-ul > li {
+        /* width:12% ; */
+        float: left;
+        font-size:4px;
+        margin-left: 70px;
+        margin-top: 20px;
+    }
+    .dudtkd {
+        margin-right:30px;
+    }
+
+    /*footer아이콘 */
+    #footer-img >ul > li{
+        float: left;
+        margin-top: 25px;
+        margin-left: 200px;
+    }
+
+    #footer-img-11 {
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <!-- 로고부분 -->
+    <div id="logo" class="bas">
+        <ul class="bas-ul">
+            <li><a href=#><img src="img/icon_facebook.png" alt=""></a></li>
+            <li><a href=#><img src="img/icon_twitter.png" alt=""></a></li>
+            <li><a href=#><img src="img/icon_blog.png" alt=""></a></li>
+            <li><a href=#><img src="img/icon_instgram.png" alt=""></a></li>
+            <li><a href=#><img src="img/icon_youtube.png" alt=""></a></li>
+            <li class="baskin"><a href=#><img src="img/logo_baskinrobbins.png" alt=""></a></li>
+            <li class="right"><a href=#  style="color:gray"><span >고객센터</span></a></li>
+            <li ><a href=#  style="color:gray"><span>CONTACTUS</span></a></li>
+            <li ><a href=#><img src="img/icon_search.png" alt="" width="40px"></a></li>
+        </ul>
+    </div>
+
+    <!-- 스크롤 메뉴  -->
+    <header class="header">
+        <ul class="nav">
+            <li>
+                <a href="#">login</a>
+                <ul>
+                    <li><img src="img/1.png" alt="#"></li>
+                </ul>
+            </li>
+            <li><a href="#">join</a></li>
+            <li>
+                <a href="#">RLAVOR THE MONTH</a>
+                <ul>
+                    <li><img src="img/img_monthly_fom_211101.png" alt="#"></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">MENU</a>
+                <ul>
+                    <li><a href="#">아이스크림</a></li>
+                    <li><a href="#">아이스크림 케이크</a></li>
+                    <li><a href="#">음료</a></li>
+                    <li><a href="#">커피</a></li>
+                    <li><a href="#">디저트</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">영양 성분 및 알레르기</a>
+                <ul>
+                    <li><a href="#">아이스크림</a></li>
+                    <li><a href="#">음료</a></li>
+                    <li><a href="#">커피</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">EVENT</a>
+                <ul>
+                    <li><a href="#">진행중이벤트</a></li>
+                    <li><a href="#">당첨자발표</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">STORE</a>
+                <ul>
+                    <li><a href="#">매장찾기</a></li>
+                    <li><a href="#">고겍센터</a></li>
+                    <li><a href="#">단체주문</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">ABOUT</a>
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">도보자료</a></li>
+                    <li><a href="#">채용정보</a></li>
+                    <li><a href="#">점포개설문의</a></li>
+                    <li><a href="#">CONTACT AS</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <!-- 메인 화면 1 -->
+    <div>
+        <img src="img/2.png" alt="#" width="100%" >
+    </div>
+    <div> <!--메인화면 2-->
+        <img src="img/2qjsWo.png" alt="#" width="100%" >
+    </div>
+    
+
+    <!-- 11월 이달의 신제품 -->
+    <div class="green">
+        <img class="green-img-1" src="img/11dnfjekf.png" style="width:500px">
+    </div>
+    <div class="green">
+        <img class="green-img-2" src="img/ahdma.png"  style="width:550px" >
+    </div>
+
+    <!-- 그리드  -->
+    <div id="inst-text-img">
+        <div><img src="img/dlekfdml.png" alt=""></div>
+    </div>
+    <div id="inst" class="inst-img">
+        <div id="box1"><img src="img/in1-.jpg" alt="" style="width: 150px;"></div>
+        <div id="box2"><img src="img/in2-.jpg" alt="" style="width: 150px;"></div>
+        <div id="box3"><img src="img/in-4.jpg" alt="" style="width: 150px;"></div>
+        <div id="box4"><img src="img/in-444.jpg" alt="" style="width: 150px;"></div>
+        <div id="box4"><img src="img/in1-.jpg" alt="" style="width: 150px;"></div>
+    </div>
+    <div id="in" class="inst-img">
+        <div id="box5"><img src="img/in2-.jpg" alt="" style="width: 150px;"></div>
+        <div id="box6"><img src="img/in1-.jpg" alt="" style="width: 150px;"></div>
+        <div id="box7"><img src="img/in-444.jpg" alt="" style="width: 150px;"></div>
+        <div id="box8"><img src="img/in-4.jpg" alt="" style="width: 150px;"></div>
+        <div id="box9"><img src="img/in1-.jpg" alt="" style="width: 150px;"></div>
+    </div>
+    
+    <div id="i">
+        <div><img src="img/inakwlakr.jpg.png" alt=""></div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <hr/>
+        <ul class="footer-ul">
+            <li>
+                <a href="#">점포개설문의</a>
+            </li>
+            <li>
+                <a href="#">채용문의 </a>
+            </li>
+            <li>
+                <a href="#">윤리신고센터</a>
+            </li>
+            <li>
+                <a href="#">이용약관</a>
+            </li>
+            <li>
+                <a href="#" style="color: palevioletred;">개인정보처리방침</a>
+            </li>
+            <li>
+                <a href="#" class="dudtkd">영상정보처리기기운영관리방침</a>
+            </li>
+            <li>
+                <a href="#">거래희망회사 사전등록</a>
+            </li>
+        </ul>
+
+        <!-- 아래 이미지 -->
+        <div id="footer-img" class="footer-div">
+            <ul class="img-1">
+                <li><img src="img/btn_happypoint.png" alt=""></li>
+                <li><img src="img/btn_happymarket.png" alt="" ></li>
+                <li><img src="img/btn_spc_story.png" alt=""></li>
+                <li><img src="img/btn_norton.gif" alt=""></li>
+                <li><img src="img/btn_ccm.gif" alt=""></li>
+                <li><img src="img/btn_ksa.png" alt=""></li>
+            </ul>
+        </div>
+
+        <div class="footer-div">
+        <select class="or">
+            <option value="FAMILY SITE">FAMILY SITE</option>
+            <option value="베스킨스쿨">베스킨스쿨</option>
+            <option value="SPC그룹사이트">SPC그룹사이트</option>
+            <option value="SPCMAGAZINE">SPCMAGAZINE</option>
+            <option value="해피포인트">SPCMAGAZINE</option>
+            <option value="파스쿠찌">파스쿠찌</option>
+            <option value="삼립">삼립</option>
+            <option value="파리바게트">파리바게트</option>
+            <option value="던킨도너츠">던킨도너츠</option>
+        </select>
+
+        <div id="footer-img-11">
+            <img src="img/footer_1.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

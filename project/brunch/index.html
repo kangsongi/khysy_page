@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 페이지 사이즈 맞춤 */
+        html {
+            padding-left: 150px;;
+            padding-right: 150px
+        }
+
+        /* 수고했어 text  */
+        #a1 {
+            background-color: #ffe9df;
+            text-align: center;
+        }
+        nav {
+            list-style:none;
+            height: 50px;
+            margin: 0;
+            background-color: #ffffff;
+        }
+        nav ul li {
+            float: left;
+            margin-right: 40px;
+        }
+        .bru-li img {
+            width:50px;
+        }
+        /* 메뉴바 오른쪽 정렬 안됨  */
+        .bru-li-1 button {
+            background-color: #ffffff;
+            color: gray;
+            border-color:gray;
+        }
+        .bru-li-3 img {
+            width: 20px;
+        }
+
+        /* 글이 작품이 되는 공간 */
+        .h2-rmf {
+            margin-left: 50px;
+        }
+        .h3-dus {
+            color: #acacac;
+        }
+
+        /* 가운데 사진 */
+        .center-gallery  {
+            margin-left: 50px; /*안먹힘*/
+            position: relative;
+        }
+     
+        .sta-rmf-1 {
+            position: absolute;
+            top: 60%;
+            right: 65%;
+            color: #ffffff;  
+            text-align: center;
+            font-size:25px;
+        }
+        .sta-rmf-1-1 {
+            position: absolute;
+            top: 80%;
+            right: 70%;
+            color: #ffffff;
+            text-align: center;
+            font-size:15px;
+        }
+
+        .sta-rmf-2 {
+            position: absolute;
+            top: 110%;
+            right: 65%;
+            color: #ffffff;
+            text-align: center;
+            font-size:25px;
+        }
+        .sta-rmf-2-2 {
+            position: absolute;
+            top: 125%;
+            right: 68%;
+            color: #ffffff;
+            text-align: center;
+            font-size:15px;
+        }
+
+        .sta-3 {
+            position: absolute;
+            left: 53%;
+            top: 46%;
+        }
+        .sta-rmf-3 {
+            position: absolute;
+            top: 78%;
+            right: 20%;
+            color: #ffffff;
+            text-align: center;
+            font-size:30px;
+        }
+        .sta-rmf-3-3 {
+            position: absolute;
+            top: 78%;
+            right: 20%;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- 맨 윗부분 -->
+    <div id="a1">
+        <h3>수고했어, 올해도! 작가님의 브런치 활동 결산 리포트가 도착했습니다.</h3>
+    </div>
+
+    <!-- 서브메뉴 -->
+    <nav>
+        <!-- 서브메뉴 첫번째 바 -->
+        <!-- <div class="menu-link">
+            <img src="img/1.png" class="link-img">
+            <p class="link-rmf">You can make anything by writing</p>
+            <p class="link-rmf">- C.S.Lewis -</p>
+            <button class="img-button">브런치 시작하기</button>
+        </div> -->
+
+        <!-- 서브메뉴 두번째 라인  -->
+        <!-- <div class="menu-link-2">
+            <p clss="link-2-rmf">브런치 홈</p>
+            <a href="" class="link">브런치 나우</a>
+            <a href="" class="link">브런치 책방</a>
+        </div> -->
+
+    <!-- 서브메뉴 옆에 이미지들   -->
+    <div class="brunch">
+        <ul class="bru-ul">
+            <li class="bru-li-2"><a href=""><img src="img/1-1png.png" width="30px;"></a></li>
+            <li class="bru-li" ><img src="img/2.png"></li>
+            <li class="bru-li-1"><button>시작하기</button></li>
+            <li class="bru-li-3" ><img src="img/3png.png"></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- 글이 작품이 되는 공간, 브런치 글씨  -->
+    <div class="h2-rmf">
+        <h2 class="h2-strong"> 글이 작품이 되는 공간, 브런치</h2>
+        <h3 class="h3-dus">브런치에 담긴 아룸다운 작품을 감상해 보세요.<br/>
+        그리고 다시 꺼내 보세요.<br/> 사람 속 간직하고 있는 글과 감성을.</h3>
+    </div>
+    <!-- 다시 -->
+    <div class="gallery">
+        <ul class="gallery-menu">
+            <li><img src="img/4.png" alt=""></li>
+            <li><img src="img/5.png" alt=""></li>
+            <li><img src="img/6.png" alt=""></li>
+            <li><img src="img/7.png" alt=""></li>
+            <li><img src="img/8.png" alt=""></li>
+        </ul>
+    </div>
+
+    <!-- 가운데 사진   -->
+    <div id="center-gallery"> <!-- 전체 div-->
+    <!-- 첫번째 사진  -->
+    <div class="center-img-1">
+        <img src="img/4.png" class="sta-1" width="400px;" height="300px;">
+        <p class="sta-rmf-1">스타벅스에서 톨 <br />사이즈 주만하다<br /> 까여본 적 있나요?</p>
+        <p class="sta-rmf-1-1">by 보리차</p>
+    </div>
+    <!-- 두번째 사진 -->
+    <div class="center-img-1">
+        <img src="img/5.png" class="sta-2"width="400px;" height="300px;">
+        <p class="sta-rmf-2">과식해도 기분 좋은 <br />미식도시 전주</p>
+        <p class="sta-rmf-2-2">by 유성호의 맛있는 동 </p>
+    </div>
+    <!-- 세번째 사진  -->
+    <div class="center-img-1">
+        <img src="img/6.png" class="sta-3" width="400px;" height="600px;" align="right">
+        <p class="sta-rmf-3">강수지 언니가 <br />부러웠을 뿐인데</p>
+        <p class="sta-rmf-3-3">by 민작가 </p>
+    </div>
+    <!-- 네번째 사진  -->
+    <div class="center-img-1">
+        <img src="img/7.png" class="sta" width="150px;">
+        <p class="sta-rmf">배달을 시키려다, <br />집밥을 차렸다</p>
+        <p class="sta-rmf">얼마나 기다려온 주말인가, 정말 푹!  <br />쉬기로 마음먹은 날, 보일러를...</p>
+        <p class="sta-rmf">by 밥짓는 하루 </p>
+    </div>
+    <!-- 다섯번째 사진  -->
+    <div class="center-img-1">
+        <img src="img/8.png" class="sta" width="150px;">
+        <p class="sta-rmf">출장지에서 만난 <br />뜻밖의 선물</p>
+        <p class="sta-rmf">인간의 존재 목적은 생존이 아닌<br /> 삶이다. 난 더 오래 살려고 애...</p>
+        <p class="sta-rmf">by 미스틱 </p>
+    </div>
+
+    <!-- 화살표 버튼 -->
+    <button class="btn" id="btn" type="submit"><img class="btn-img" src="img/9.png" width="150px"></button>
+    <button class="btn" id="btn-2" type="submit"><img class="btn-img" src="img/10.png" width="150px"></button>
+</div>
+
+<!-- 사진 아래 버튼  -->
+<div class="number">
+    <a href="" class="link-page" data-pase="1" >01</a>
+    <a href="" class="link-page" data-pase="2" >02</a>
+    <a href="" class="link-page" data-pase="3" >03</a>
+    <a href="" class="link-page" data-pase="4" >04</a>
+    <a href="" class="link-page" data-pase="5" >05</a>
+    <a href="" class="link-page" data-pase="6" >06</a>
+    <a href="" class="link-page" data-pase="7" >07</a>
+    <a href="" class="link-page" data-pase="8" >08</a>
+    <a href="" class="link-page" data-pase="9" >09</a>
+</div>
+
+<!-- brunch keyword -->
+<div class="keyword">
+<h3 class="keyword-h3">B R U N C H  K E Y W O R D</h3>
+<p class="keyword-p">키워드로 분류된 다양한 글 모음</p>
+</div>
+
+<div class="greed">
+    <a class="keyword-" href="">
+        <span class="keyword-rmf">지구한바퀴 세계여행</span>
+    </a>
+    <a class="keyword-" href="">
+        <span class="keyword-rmf">그림웹툰</span>
+    </a>
+    <a class="keyword-" href="">
+        <span class="keyword-rmf">시사-이슈</span>
+    </a>
+    <a class="keyword-" href="">
+        <span class="keyword-rmf">IT트랜드</span>
+    </a>
+    <a class="keyword-" href="">
+        <span class="keyword-rmf">사진.촬영</span>
+    </a>
+    <a class="keyword-" href="">
+        <span class="keyword-rmf">취향저격 영화리뷰</span>
+    </a>
+    <a class="keyword-" href="">
+        <span class="keyword-rmf">오늘은 이런 책</span>
+    </a>
+    <a class="keyword-" href="">
+        <span class="keyword-rmf">뮤직인사이드</span>
+    </a>
+</div>
+
+<!-- BRUNCH WRITERS -->
+<div class="writers">
+    <h3 class="writer-title">B R U N C H  W R I T E R S</h3>
+    <p class="writer-rmf">브런치 추천 작가</p>
+
+    <button class="writer-mint">자기계발</button>
+    <button class="writer-mint-2">인문교향</button>
+    <button class="writer-mint-3">글쓰기</button>
+</div>
+
+<!-- 갤러리 사진 2*3 -->
+<ul class="list-writer">
+    <li class="list-li-1">
+        <img src="img/11.png" class="list-img">
+        <span class="list-text">유경철 소통과 공감</span>
+        <span class="list-text-1">고통과 공감 출간작가</span>
+        <span class="list-text-2">소통과 공감 대표. 사람들의 변화와 성장을 돕는 일을 하고 있습니다. 글을 쓰는 작가이자 기업과 공공기관에서 리더십, 커뮤니케이션 강의를 하고 있습니다</span>
+
+        <button class="list-button">자기계발</button>
+        <button class="list-button">경영</button>
+        <button class="list-button">. . .</button>
+    </li>    
+
+    <li class="list-li-2">
+        <img src="img/12.png" class="list-img">
+        <span class="list-text">nay</span>
+        <span class="list-text-1">연구직 에세이스트</span>
+        <span class="list-text-2">연구직 회사원으로 일하면서 깨달은 점을 공유합니다. 그리고 일상의 발견을 소중히 여깁니다. 읽고 싶은 글을 쓰는 에세이스트를 꿈 꿉니다.</span>
+
+        <button class="list-button">자기계발</button>
+        <button class="list-button">에세이</button>
+        <button class="list-button">. . .</button>
+    </li>    
+
+    <li class="list-li-3">
+        <img src="img/12.png" class="list-img">
+        <span class="list-text">이건</span>
+        <span class="list-text-1">주한미군 에세이스트</span>
+        <span class="list-text-2">안전한 대한민국을 꿈꾸는 26년차 소방관. 주한 미 공군 오산기지 선임소방검열관. 소방칼럼니스트. 외래교수. 주한미군 취업가이드 저자.</span>
+
+        <button class="list-button">자기계발</button>
+        <button class="list-button">라이프스타일</button>
+        <button class="list-button">. . .</button>
+    </li>    
+
+    <li class="list-li-4">
+        <img src="img/11.png" class="list-img">
+        <span class="list-text">유경철 소통과 공감</span>
+        <span class="list-text-1">고통과 공감 출간작가</span>
+        <span class="list-text-2">소통과 공감 대표. 사람들의 변화와 성장을 돕는 일을 하고 있습니다. 글을 쓰는 작가이자 기업과 공공기관에서 리더십, 커뮤니케이션 강의를 하고 있습니다</span>
+
+        <button class="list-button">자기계발</button>
+        <button class="list-button">경영</button>
+        <button class="list-button">. . .</button>
+    </li>    
+
+    <li class="list-li-5">
+        <img src="img/12.png" class="list-img">
+        <span class="list-text">nay</span>
+        <span class="list-text-1">연구직 에세이스트</span>
+        <span class="list-text-2">연구직 회사원으로 일하면서 깨달은 점을 공유합니다. 그리고 일상의 발견을 소중히 여깁니다. 읽고 싶은 글을 쓰는 에세이스트를 꿈 꿉니다.</span>
+
+        <button class="list-button">자기계발</button>
+        <button class="list-button">에세이</button>
+        <button class="list-button">. . .</button>
+    </li>    
+
+    <li class="list-li-6">
+        <img src="img/12.png" class="list-img">
+        <span class="list-text">이건</span>
+        <span class="list-text-1">주한미군 에세이스트</span>
+        <span class="list-text-2">안전한 대한민국을 꿈꾸는 26년차 소방관. 주한 미 공군 오산기지 선임소방검열관. 소방칼럼니스트. 외래교수. 주한미군 취업가이드 저자.</span>
+
+        <button class="list-button">자기계발</button>
+        <button class="list-button">라이프스타일</button>
+        <button class="list-button">. . .</button>
+    </li>    
+</ul>
+
+    <!-- 브런치 작가 지원하기 img -->
+    <div class="wldnjsgkrl">
+        <img src="img/14.png" >
+    </div>
+
+    <!--recommended articles-->
+    <div class="recommended">
+        <h3 class="recommend-h3">R E C O M M E N D E D  A R T I C L E S</h3>
+        <p class="recommend-text">브런치의 다양한 글을 만나보세요.</p>
+    </div>
+
+    <!-- 사진 4개  -->
+    <div class="articles-gell">
+        <ul class="article-gell-ul">
+            <li class="article-gell-li">
+                <img src="img/15.png" class="article-img">
+                <h3>이 아이의 3년후 </h3>
+                <p>이 아이는 자라서(3년후) 이렇게 됩니다. #점례</p>
+                <p>by 이용한 </p>
+            </li>
+            <li class="article-gell-li">
+                <img src="img/16.png" class="article-img">
+                <h3>이 아이의 3년후 </h3>
+                <p>이 아이는 자라서(3년후) 이렇게 됩니다. #점례</p>
+                <p>by 이용한 </p>
+            </li>
+            <li class="article-gell-li">
+                <img src="img/17.png" class="article-img">
+                <h3>이 아이의 3년후 </h3>
+                <p>이 아이는 자라서(3년후) 이렇게 됩니다. #점례</p>
+                <p>by 이용한 </p>
+            </li>
+            <li class="article-gell-li">
+                <img src="img/18.png" class="article-img">
+                <h3>이 아이의 3년후 </h3>
+                <p>이 아이는 자라서(3년후) 이렇게 됩니다. #점례</p>
+                <p>by 이용한 </p>
+            </li>
+        </ul>
+        <!-- 화살표 버튼 -->
+    <button class="btn" id="btn" type="submit"><img class="btn-img" src="img/9.png" width="150px"></button>
+    <button class="btn" id="btn-2" type="submit"><img class="btn-img" src="img/10.png" width="150px"></button>
+    </div>
+
+    <!-- 마지막코드 -->
+    <div class="footer">
+        <!-- text -->
+        <div class="footer-text">
+            <p class="footer-p">you can make anything <br/>by writing</p>
+            <p class="footer-p-p">C.SLewis</p>
+        </div>
+        <!-- ul, li -->
+        <ul class="footer-ul-1">
+            <li>브런치 이용안내 </li>
+            <li>작가신청 </li>
+            <li>작가 지원 프로젝트 </li>
+            <li>제휴제안</li>
+            <li>고객센터 </li>
+        </ul>
+        <ul class="footer-ul-2">
+            <li>이용약관 </li>
+            <li>이전 이용약관 </li>
+            <li>카카오 개인정보 처리방침 </li>
+            <li>청소년 보호정책</li>
+            <li>운영정책 </li>
+        </ul>
+        <ul class="footer-ul-3">
+            <li>브런치팀 공지사항 </li>
+            <li>브런치 카카오톡 채널 </li>
+            <li>브런치 인스타그램 </li>
+            <li>브런치 페이스북</li>
+        </ul>
+    </div>
+    
+    <hr />
+    <p class="kakao-corp">© kakao corp.</p>
+</body>
+</html>
